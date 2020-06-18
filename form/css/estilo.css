@@ -1,0 +1,27 @@
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: rgb(231, 110, 28);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+    /* parrafo usando elementos se aplica para todos los parrafos  */
+p {
+    color: rgb(165, 8, 34);
+    text-align: center;
+}
+
+/*selector id*/
+#para1 {
+    text-align: left;
+    color: red;
+}
+
+/*selector clase*/
+
+.center {
+    text-align: center;
+    color: rgb(12, 139, 112);
+  }

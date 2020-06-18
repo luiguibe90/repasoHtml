@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pagina Links</title>
+    <meta charset="UTF-8">
+    <link href="./css/estilo.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, 
+    maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        h3 {
+            color: crimson;
+        }
+
+        a:link {
+            color: green;
+            background-color: rgb(211, 207, 240);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkorange;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Link absoluto - url</h3>
+    <p><a href="https://www.espe.edu.ec">el link va a una url Visita la Espe</a></p>
+
+    <h3>Link relativo - pagina</h3>
+    <p><a href="./index.html">va a una pagina dentro de la misma carpeta de proyecto</a></p>
+
+    <h2>Link relativo - pagina en otra carpeta</h2>
+    <p><a href="./mas/otra.html">va a una pagina dentro de la misma carpeta de proyecto</a></p>
+
+
+    <h2>la imagen es un link se usa etique alt para la descripcion</h2>
+    <a href="./index.html"><img src="./img/descarga.png" alt="Hola" style="width:42px;height:42px;"></a>
+
+
+    <h3>el email es un link directo para enviar el correo al mismo</h3>
+    <a href="mailto:lgbentezr@espe.edu.ec">enviar email</a>
+
+</body>
+
+
+
+</html>
