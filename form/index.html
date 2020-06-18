@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Repaso html</title>
+    <link href="./css/estilo.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, 
+    maximum-scale=1.0, minimum-scale=1.0">
+
+
+    <style>
+        h1 {
+            color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            color: chocolate
+        }
+
+        a:link,
+        a:visited,
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+
+        }
+
+        a:hover {
+            color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario de envio de dato </h1>
+    <form action="./datos.html" method="post">
+        <!--estos datos se enviaran a este pagina-->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Enviar Datos">
+    </form>
+
+
+    <h2>Seleccion con circulos y envio de datos</h2>
+    <form action="./datos.html" method="post">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="submit" value="Enviar Datos">
+    </form>
+
+
+
+    <h2>seleciones menu desplegable</h2>
+    <form action="./datos.html" method="POST">
+        <label for="cars">Seleccione de la lista:</label>
+        <select id="cars" name="cars">
+            <option value="voo">Volvo</option>
+            <option value="saab">Saab</option>
+        </select>
+        <input type="submit">
+    </form>
+    <h1>ingreso de todo un texto</h1>
+    <form action="./datos.html" method="post">
+        <textarea name="message" rows="5" cols="10">The cat was playing in the garden.</textarea>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <h1>Ingreso de texto definido con css</h1>
+    <form action="./datos.html">
+        <textarea name="message" style="width:100px; height:100px;">
+            esto se va a ingresar.
+        </textarea>
+        <br>
+        <input type="submit" value="subir datos">
+    </form>
+
+    <h4>contraseña usuario</h4>
+    <form action="./datos.html" method="post">
+        <fieldset style="width:100px; height:170px;">
+            <legend>Inice Sesion:</legend>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="ingresar">
+            <input type="reset">
+            <!--para borrar los datos del formulario-->
+        </fieldset>
+    </form>
+    <h1>seleccion con check</h1>
+    <form action="./datos.html">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="submit" value="subir">
+    </form>
+
+    <h1>ingreso de fecha con calendario</h1>
+    <form action="./datos.html" method="get">
+        <label for="datemax">Seleccione Edad:</label>
+        <input type="date" id="datemax" name="datemax" max="2020-06-18"><br><br>
+        <input type="submit" value="ingresar Edad">
+    </form>
+
+    <h1>Carga de archivos</h1>
+    <form action="./datos.html" method="get">
+        <label for="myfile">seleccione archivo:</label><br><br>
+        <input type="file" id="myfile" name="archivo"><br><br>
+        <input type="submit" value="cargar archivo">
+    </form>
+
+    <h1>busqueda</h1>
+    <form action="./datos.html">
+        <label for="gsearch">Ingrese Texto a Buscar:</label>
+        <input type="search" id="gsearch" name="buscar">
+        <input type="submit" value="Buscar">
+      </form>
+
+      <h1>telefono</h1>
+      <form action="./datos.html">
+        <label for="phone">Ingrese su numero:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="0995271376" pattern="[0]{1}[9]{1}[9]{1}[0-9]{1}[0-9]{1}[0-9]{1}[0-9]{1}[0-9]{1}[0-9]{1}[0-9]{1}" required><br>
+        <input type="submit" value="ingresar numero">
+      </form>
+
+      <h1>Boton imagen enviar</h1>
+      <form>
+        <label for="fname">Nombre:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+      </form>
+</body>
+
+</html>
